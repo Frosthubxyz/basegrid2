@@ -38,7 +38,23 @@ export default function CreateTaskPage() {
               ></textarea>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="category" className="text-sm font-medium text-zinc-300">
+                  Category
+                </label>
+                <select
+                  id="category"
+                  className="bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all appearance-none"
+                >
+                  <option value="data_labeling">Data Labeling</option>
+                  <option value="verification">Verification</option>
+                  <option value="content_review">Content Review</option>
+                  <option value="surveys">Surveys</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
               <div className="flex flex-col gap-2">
                 <label htmlFor="reward" className="text-sm font-medium text-zinc-300">
                   Reward (in ETH)
