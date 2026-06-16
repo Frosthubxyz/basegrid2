@@ -41,6 +41,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-zinc-950 text-white" suppressHydrationWarning>
         <Providers>
           {children}
+          {/* Main Footer Component */}
           <Footer />
         </Providers>
         <Toaster position="bottom-right" toastOptions={{ style: { background: '#18181b', color: '#fff', border: '1px solid #27272a' } }} />
